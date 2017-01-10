@@ -104,7 +104,7 @@ toolbox.options.debug = true;
 toolbox.router.default = toolbox.networkOnly;
 toolbox.router.get('/(.*)', ampByExampleHandler, {origin: self.location.origin});
 // cache first amp runtime 
-toolbox.router.get('/(.*)', toolbox.cacheFirst, {origin: 'https://cdn.ampproject.org'});
+toolbox.router.get('/(.*)', toolbox.cacheFirst, {origin: 'https://cdn.rawgit.com/'});
 // cache first google fonts
 toolbox.router.get('/(.+)', toolbox.cacheFirst, {origin: /https?:\/\/fonts.+/});
 
